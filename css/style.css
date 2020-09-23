@@ -1,0 +1,187 @@
+/*Ho usato i margin dotted per rendere più chiare le sezioni */
+
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+header{
+   background-color: rgb(244, 249, 253);
+}
+
+header::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+.header-left{
+   width: 50%;
+   float: left;
+   border: 1px dotted black;
+
+}
+.header-right{
+   width: 50%;
+   float: left;
+   border: 1px dotted black;
+}
+
+.nav-left{
+   width: 50%;
+   float: left;
+   border: 1px dotted black;
+}
+.nav-right{
+   width: 50%;
+   float: left;
+   border: 1px dotted black;
+}
+
+nav::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+.first-section{
+   background-color: rgb(255, 244, 239);
+}
+
+.box-first-section{
+   width: 50%;
+   height: 100%;
+   border: 1px dotted black;
+}
+
+.split{
+   background-color: rgb(175, 235, 228);
+}
+
+main{
+   background-color: rgb(244, 249, 253);
+}
+
+.box-nobackground{
+   width: 100%;
+   border: 1px dotted black;
+}
+.box-h{
+   width: 100%;
+   border: 1px dotted black;
+   background-color: white;
+}
+
+.box-v{
+   width: 33.3%;
+   background-color: white;
+   float: left;
+   border: 1px dotted black;
+}
+
+main::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+.second-section{
+   background-color: rgb(0, 171, 184)
+}
+
+.box-second-section-top{
+   height: 35%;
+   border: 1px dotted black;
+
+}
+
+.box-second-section-bottom{
+   height: 65%;
+   border: 1px dotted black;
+
+}
+
+.second-section::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+
+.box-third-left{
+   width:40%;
+   border: 1px dotted black;
+   float: left;
+
+}
+
+.box-third-right{
+   width:60%;
+   border: 1px dotted black;
+   float: left;
+}
+
+.third-section::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+.box-fourth-left{
+   width:40%;
+   border: 1px dotted black;
+   float: left;
+
+}
+
+.box-fourth-right{
+   width:60%;
+   border: 1px dotted black;
+   float: left;
+}
+
+footer{
+   background-color: rgb(50, 73, 91);
+
+}
+
+.box-footer-top{
+   height: 50%;
+   border: 1px dotted black;
+
+}
+
+.box-footer-middle{
+   height: 25%;
+   border: 1px dotted black;
+
+}
+.box-footer-bottom{
+   height: 25%;
+   border: 1px dotted black;
+
+}
+
+/* Valori per grandezze da eliminare domani */
+
+.height100 {
+   height: 100px;
+}
+
+.height250{
+   height: 250px;
+}
+
+.height500{
+   height: 500px;
+}
+
+.height700 {
+   height: 500px;
+}
+
+.height1000{
+   height: 1000px;
+}
