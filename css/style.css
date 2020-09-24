@@ -110,7 +110,6 @@ nav::after{
 
 main{
    background-color: rgb(244, 249, 253);
-   height: 950px;
 }
 .container-main{
    width: 70%;
@@ -121,7 +120,16 @@ main{
 .box-slogan{
    width: 100%;
    border: 1px dotted black;
-   height: 250px;
+   text-align: center;
+}
+
+.slogan-content img{
+   width: 200px;
+   height: 200px;
+}
+
+.slogan-content{
+
 }
 
 .box-crm{
@@ -129,6 +137,7 @@ main{
    border: 1px dotted black;
    background-color: white;
    height: 250px;
+   margin-top: 20px;
 }
 
 .logo-crm{
@@ -136,8 +145,33 @@ main{
    border: 1px dotted black;
    float: left;
    height: 100%;
-
 }
+
+.logo-crm-top{
+   height: 60%;
+   position: relative;
+}
+
+.logo-crm-top img{
+   width: 150px;
+   height: 100px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.logo-crm-bottom button{
+   position: relative;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, 0%);
+}
+
+.logo-crm-bottom{
+   height: 40%;
+}
+
 
 .text-crm{
    width: 70%;
@@ -146,35 +180,45 @@ main{
    height: 100%;
 }
 
+.hr-inline{
+   display: inline-block;
+   width: 80%;
+}
+
 .container-utility{
    margin-top: 20px;
    margin-bottom: 20px;
    height: 100%;
+   text-align: center;
 
 }
 
 .box-marketing{
    width: 30%;
-   height: 400px;
    background-color: white;
    float: left;
    border: 1px dotted black;
+   margin-bottom: 20px;
+}
+
+.align-left{
+   text-align: left;
 }
 
 .box-sales{
    width: 30%;
-   height: 400px;
    background-color: white;
    float: left;
    border: 1px dotted black;
    margin: 0 5%;
+   margin-bottom: 20px;
 
 }.box-hub{
    width: 30%;
-   height: 400px;
    background-color: white;
    float: left;
    border: 1px dotted black;
+   margin-bottom: 20px;
 }
 
 .container-main::after{
@@ -184,7 +228,8 @@ main{
 }
 
 .statistics{
-   background-color: rgb(0, 171, 184)
+   background-color: rgb(0, 171, 184);
+
 }
 
 .container-statistics{
