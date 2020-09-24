@@ -1,7 +1,6 @@
 /*Ho usato i margin dotted per rendere più chiare le sezioni */
 
-
-*{
+* {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
@@ -17,16 +16,44 @@ header::after{
    display: table;
 }
 
+.container-header{
+   width: 70%;
+   margin: auto;
+   height: 100%;
+}
+
 .header-left{
    width: 50%;
    float: left;
    border: 1px dotted black;
-
 }
+
+.header-left-content{
+   line-height: 100px;
+}
+
+.header-right-content{
+   line-height: 100px;
+   float: right;
+}
+
+.header-right-content::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
+
 .header-right{
    width: 50%;
    float: left;
    border: 1px dotted black;
+}
+
+.container-nav{
+   width: 70%;
+   height: 100%;
+   margin: auto;
 }
 
 .nav-left{
@@ -50,6 +77,12 @@ nav::after{
    background-color: rgb(255, 244, 239);
 }
 
+.container-introduction{
+   width: 70%;
+   height: 100%;
+   margin: auto;
+}
+
 .box-introduction{
    width: 50%;
    height: 100%;
@@ -62,26 +95,74 @@ nav::after{
 
 main{
    background-color: rgb(244, 249, 253);
+   height: 950px;
+}
+.container-main{
+   width: 70%;
+   height: 100%;
+   margin: auto;
 }
 
 .box-slogan{
    width: 100%;
    border: 1px dotted black;
+   height: 250px;
 }
-.box-horizontal{
+
+.box-crm{
    width: 100%;
    border: 1px dotted black;
    background-color: white;
+   height: 250px;
 }
 
-.box-vertical{
-   width: 33.3%;
+.logo-crm{
+   width: 30%;
+   border: 1px dotted black;
+   float: left;
+   height: 100%;
+
+}
+
+.text-crm{
+   width: 70%;
+   border: 1px dotted black;
+   float: left;
+   height: 100%;
+}
+
+.container-utility{
+   margin-top: 20px;
+   margin-bottom: 20px;
+   height: 100%;
+
+}
+
+.box-marketing{
+   width: 30%;
+   height: 400px;
    background-color: white;
    float: left;
    border: 1px dotted black;
 }
 
-main::after{
+.box-sales{
+   width: 30%;
+   height: 400px;
+   background-color: white;
+   float: left;
+   border: 1px dotted black;
+   margin: 0 5%;
+
+}.box-hub{
+   width: 30%;
+   height: 400px;
+   background-color: white;
+   float: left;
+   border: 1px dotted black;
+}
+
+.container-main::after{
    content: '';
    clear: both;
    display: table;
@@ -89,6 +170,12 @@ main::after{
 
 .statistics{
    background-color: rgb(0, 171, 184)
+}
+
+.container-statistics{
+   width: 70%;
+   height: 100%;
+   margin: auto;
 }
 
 .box-statistics-top{
@@ -109,6 +196,11 @@ main::after{
    display: table;
 }
 
+.container-commercial{
+   width: 70%;
+   height: 100%;
+   margin: auto;
+}
 
 .box-commercial-left{
    width:40%;
@@ -129,22 +221,39 @@ main::after{
    display: table;
 }
 
+.container-join-us{
+   width: 70%;
+   height: 100%;
+   margin: auto;
+}
+
 .box-join-us-left{
-   width:40%;
+   width:50%;
    border: 1px dotted black;
    float: left;
 
 }
 
 .box-join-us-right{
-   width:60%;
+   width:50%;
    border: 1px dotted black;
    float: left;
 }
 
+.join-us::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
 footer{
    background-color: rgb(50, 73, 91);
+}
 
+.container-footer{
+   width: 70%;
+   height: 100%;
+   margin: auto;
 }
 
 .box-footer-top{
