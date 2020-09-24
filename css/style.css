@@ -24,6 +24,7 @@ header::after{
 
 .header-left{
    width: 50%;
+   height: 100px;
    float: left;
    border: 1px dotted black;
 }
@@ -32,22 +33,15 @@ header::after{
    line-height: 100px;
 }
 
+.header-right{
+   width: 50%;
+   height: 100px;
+   float: left;
+   border: 1px dotted black;
+}
 .header-right-content{
    line-height: 100px;
    float: right;
-}
-
-.header-right-content::after{
-   content: '';
-   clear: both;
-   display: table;
-}
-
-
-.header-right{
-   width: 50%;
-   float: left;
-   border: 1px dotted black;
 }
 
 .container-nav{
@@ -58,13 +52,34 @@ header::after{
 
 .nav-left{
    width: 50%;
+   height: 100px;
    float: left;
    border: 1px dotted black;
 }
+
+.nav-left-content {
+   position: relative;
+   height:100%;
+}
+
+.nav-left img{
+   width: 150px;
+   height: 75px;
+   position: absolute;
+   top: 50%;
+   transform: translate(0,-50%);
+}
+
 .nav-right{
    width: 50%;
+   height: 100px;
    float: left;
    border: 1px dotted black;
+}
+
+.nav-right-content{
+   line-height: 100px;
+   float:right;
 }
 
 nav::after{
