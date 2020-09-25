@@ -245,7 +245,6 @@ main{
    border-color: rgb(254, 119, 90);
 }
 
-
 .logo-crm-container{
    position: absolute;
    top: 50%;
@@ -451,6 +450,10 @@ table td {
    display: table;
 }
 
+.commercial{
+   padding-top: 20px;
+
+}
 .container-commercial{
    width: 70%;
    height: 100%;
@@ -459,28 +462,23 @@ table td {
 
 .box-commercial-left{
    width:40%;
-   border: 1px dotted black;
    float: left;
    text-align: center;
 }
 
 .big-number{
    font-size: 30px;
+   color: rgb(51, 71, 91);
 }
 
 .box-commercial-right{
    width:60%;
-   border: 1px dotted black;
    float: left;
 }
 
-.logopartner{
-   width:150px;
-   height: 30px;
-   background-color: yellow;
-   border: 1px solid black;
-   display: inline-block;
-   float: left;
+.fa-id-card-o{
+   margin-right: 15px;
+   width: 150px;
 }
 
 .commercial::after{
@@ -493,18 +491,24 @@ table td {
    width: 70%;
    height: 100%;
    margin: auto;
+   margin-top: 50px;
 }
 
 .box-join-us-left{
    width:50%;
-   border: 1px dotted black;
    float: left;
+}
 
+.box-join-us-left h2{
+   font-size: 35px;
+}
+
+.box-join-us-left p{
+   margin: 40px 0;
 }
 
 .box-join-us-right{
    width:50%;
-   border: 1px dotted black;
    float: left;
    text-align: center;
 }
@@ -533,15 +537,32 @@ footer{
 }
 
 .box-footer-top{
-   border: 1px dotted black;
+   padding-top: 20px;
+}
 
+.box-footer-top:after{
+   content: '';
+   clear: both;
+   display: table;
 }
 
 .box-footer-top .box{
    width: 25%;
    float: left;
    line-height: 40px;
+}
 
+.supportbutton{
+   border-radius: 5%;
+   padding: 10px;
+   background-color: rgb(218, 222, 224);
+   color: rgb(50, 73, 91);
+   font-weight: bold;
+}
+
+.box.support .fa{
+   margin-right: 20px;
+   color:rgb(210, 214, 219);
 }
 
 .traffic span, .connect span, .manage span, .support span{
@@ -553,16 +574,27 @@ footer a {
 }
 
 .box-footer-middle{
-   border: 1px dotted black;
    text-align: center;
+   margin-top: 40px;
 }
 
 .box-footer-middle hr{
    color: rgb(210, 214, 219);
 }
 
+.box-footer-middle a {
+   display: inline-block;
+   margin: 0 15px 15px 0;
+}
+
 .box-footer-bottom{
-   border: 1px dotted black;
+   margin-bottom: 30px;
+}
+
+.box-footer-bottom:after{
+   content: '';
+   clear: both;
+   display: table;
 }
 
 .box-footer-bottom-left img{
@@ -573,19 +605,24 @@ footer a {
 .box-footer-bottom-left{
    float: left;
 }
+
+.box-footer-bottom-left span{
+   color: rgb(210, 214, 219);
+}
+
 .box-footer-bottom-right{
    float: right;
+   padding-top: 20px;
 }
+
+.box-footer-bottom-right a {
+   display: inline-block;
+   margin-right:15px;
+}
+
 
 footer::after{
    content: '';
    clear: both;
    display: table;
-}
-
-
-/* Valori per grandezze da eliminare domani */
-
-.height100 {
-   height: 100px;
 }
