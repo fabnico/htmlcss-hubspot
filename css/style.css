@@ -10,6 +10,10 @@ a{
    text-decoration: none;
 }
 
+p,h1,h2,h3,span{
+   color: rgb(51, 71, 91);
+}
+
 header{
    background-color: rgb(244, 249, 253);
 }
@@ -26,7 +30,7 @@ header::after{
    height: 100%;
 }
 
-.header-left-content a, .header-left-content span, {
+.header-left-content a {
    color: rgb(51, 71, 91);
 }
 
@@ -158,14 +162,12 @@ nav::after{
 
 .box-introduction h1{
    font-size: 60px;
-   color: rgb(51, 71, 91);
    padding-top: 40px;
 }
 
 .box-introduction p{
    margin: 30px 0;
    font-weight: bold;
-   color: rgb(51, 71, 91);
 }
 
 .box-introduction:last-child{
@@ -181,16 +183,17 @@ nav::after{
    border-color: rgb(254, 119, 90);
 }
 
-
-
-
 .split{
+   height: 100px;
    background-color: rgb(175, 235, 228);
+   border-color: rgb(51, 71, 91);
+   border: 2px solid;
 }
 
 main{
    background-color: rgb(244, 249, 253);
 }
+
 .container-main{
    width: 70%;
    height: 100%;
@@ -199,8 +202,11 @@ main{
 
 .box-slogan{
    width: 100%;
-   border: 1px dotted black;
    text-align: center;
+}
+
+.slogan-content{
+   padding-top: 40px;
 }
 
 .slogan-content img{
@@ -208,32 +214,46 @@ main{
    height: 200px;
 }
 
-.slogan-content{
+.slogan-content h2{
+   font-size: 40px;
+}
 
+.slogan-content p{
+   font-weight: bold;
+   margin: 40px 0;
 }
 
 .box-crm{
    width: 100%;
-   border: 1px dotted black;
    background-color: white;
    height: 250px;
    margin-top: 20px;
+   border-radius: 2%;
 }
 
 .logo-crm{
    width: 30%;
-   border: 1px dotted black;
    float: left;
    height: 100%;
    position: relative;
 }
+
+.learnbutton{
+   border-radius: 5%;
+   padding: 15px 35px;
+   background-color: rgb(254, 119, 90);
+   color: white;
+   font-weight: bold;
+   border-color: rgb(254, 119, 90);
+}
+
 
 .logo-crm-container{
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
-   text-align: center;
+
 }
 
 .logo-crm-container img{
@@ -241,25 +261,53 @@ main{
    height: 100px;
 }
 
-
 .text-crm{
    width: 70%;
-   border: 1px dotted black;
-   float: left;
    height: 100%;
+   float: left;
+   position: relative;
+}
+
+.text-crm h3{
+   font-size: 30px;
+}
+
+.text-crm p{
+   font-weight: bold;
+   margin: 15px 0;
+}
+
+.texthr{
+   color: rgb(51, 71, 91);
+   font-size: 20px;
+   margin-bottom: 15px;
 }
 
 .hr-inline{
    display: inline-block;
-   width: 80%;
+   width: 500px;
+   margin: 0 50px;
+}
+
+.text-crm span{
+   display: inline-block;
+   margin-right: 15px;
+}
+
+.fa-check-circle{
+   color: rgb(254, 119, 90);
+}
+
+.text-crm-container{
+   position: absolute;
+   top:50%;
+   transform: translate(0, -50%);
 }
 
 .container-utility{
-   margin-top: 20px;
    margin-bottom: 20px;
-   height: 100%;
+   margin-top: 20px;
    text-align: center;
-
 }
 
 .box-marketing{
@@ -268,10 +316,26 @@ main{
    float: left;
    border: 1px dotted black;
    margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 20px 40px;
+}
+
+.container-utility h3{
+   margin-top: 20px;
+}
+
+.box-marketing p, .box-sales p, .box-hub p{
+   margin: 20px 0;
+}
+
+.container-utility hr{
+   margin-top: 40px;
+   margin-bottom: 20px;
 }
 
 .align-left{
    text-align: left;
+   margin: 20px 0;
 }
 
 .box-sales{
@@ -281,6 +345,8 @@ main{
    border: 1px dotted black;
    margin: 0 5%;
    margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 20px 40px;
 
 }.box-hub{
    width: 30%;
@@ -288,6 +354,14 @@ main{
    float: left;
    border: 1px dotted black;
    margin-bottom: 20px;
+   margin-top: 20px;
+   padding: 20px 40px;
+}
+
+.container-utility::after{
+   content: '';
+   clear: both;
+   display: table;
 }
 
 .container-main::after{
