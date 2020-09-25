@@ -149,31 +149,20 @@ main{
    border: 1px dotted black;
    float: left;
    height: 100%;
-}
-
-.logo-crm-top{
-   height: 60%;
    position: relative;
 }
 
-.logo-crm-top img{
-   width: 150px;
-   height: 100px;
+.logo-crm-container{
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
+   text-align: center;
 }
 
-.logo-crm-bottom button{
-   position: relative;
-   top: 0;
-   left: 50%;
-   transform: translate(-50%, 0%);
-}
-
-.logo-crm-bottom{
-   height: 40%;
+.logo-crm-container img{
+   width: 150px;
+   height: 100px;
 }
 
 
@@ -409,20 +398,4 @@ footer::after{
 
 .height100 {
    height: 100px;
-}
-
-.height250{
-   height: 250px;
-}
-
-.height500{
-   height: 500px;
-}
-
-.height700 {
-   height: 500px;
-}
-
-.height1000{
-   height: 1000px;
 }
