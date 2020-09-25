@@ -26,11 +26,46 @@ header::after{
    height: 100%;
 }
 
+.header-left-content a, .header-left-content span, {
+   color: rgb(51, 71, 91);
+}
+
+.header-left-content span{
+   display: inline-block;
+   margin: 0 15px;
+}
+
+.language{
+    border: none;
+    background-color: inherit;
+    color: rgb(51, 71, 91);
+    font-size: 15px;
+}
+
+.loginbutton{
+   border-color: rgb(254, 119, 90);
+   border-radius: 10%;
+   padding: 10px;
+   background-color: white;
+   color: rgb(254, 119, 90);
+   font-weight: bold;
+   margin: 0 15px;
+
+}
+
+.getfreebutton{
+   border-radius: 10%;
+   padding: 10px;
+   background-color: rgb(254, 119, 90);
+   color: white;
+   font-weight: bold;
+   border-color: rgb(254, 119, 90);
+}
+
 .header-left{
    width: 50%;
    height: 100px;
    float: left;
-   border: 1px dotted black;
 }
 
 .header-left-content{
@@ -41,7 +76,6 @@ header::after{
    width: 50%;
    height: 100px;
    float: left;
-   border: 1px dotted black;
 }
 .header-right-content{
    line-height: 100px;
