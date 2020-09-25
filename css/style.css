@@ -6,6 +6,10 @@
    padding: 0;
 }
 
+a{
+   text-decoration: none;
+}
+
 header{
    background-color: rgb(244, 249, 253);
 }
@@ -345,26 +349,61 @@ footer{
 
 .container-footer{
    width: 70%;
-   height: 100%;
    margin: auto;
 }
 
 .box-footer-top{
-   height: 50%;
    border: 1px dotted black;
 
+}
+
+.box-footer-top .box{
+   width: 25%;
+   float: left;
+   line-height: 40px;
+
+}
+
+.traffic span, .connect span, .manage span, .support span{
+   color:white;
+   font-weight: bold;
+}
+
+footer a {
+   color:rgb(210, 214, 219);
 }
 
 .box-footer-middle{
-   height: 25%;
    border: 1px dotted black;
-
+   text-align: center;
 }
+
+.box-footer-middle hr{
+   color: rgb(210, 214, 219);
+}
+
 .box-footer-bottom{
-   height: 25%;
    border: 1px dotted black;
-
 }
+
+.box-footer-bottom-left img{
+   width: 150px;
+   height: 75px;
+}
+
+.box-footer-bottom-left{
+   float: left;
+}
+.box-footer-bottom-right{
+   float: right;
+}
+
+footer::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
 
 /* Valori per grandezze da eliminare domani */
 
