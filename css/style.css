@@ -167,7 +167,6 @@ nav::after{
 
 .box-introduction p{
    margin: 30px 0;
-   font-weight: bold;
 }
 
 .box-introduction:last-child{
@@ -219,7 +218,6 @@ main{
 }
 
 .slogan-content p{
-   font-weight: bold;
    margin: 40px 0;
 }
 
@@ -273,7 +271,6 @@ main{
 }
 
 .text-crm p{
-   font-weight: bold;
    margin: 15px 0;
 }
 
@@ -314,10 +311,10 @@ main{
    width: 30%;
    background-color: white;
    float: left;
-   border: 1px dotted black;
    margin-bottom: 20px;
    margin-top: 20px;
    padding: 20px 40px;
+   border-radius: 2%;
 }
 
 .container-utility h3{
@@ -342,20 +339,20 @@ main{
    width: 30%;
    background-color: white;
    float: left;
-   border: 1px dotted black;
    margin: 0 5%;
    margin-bottom: 20px;
    margin-top: 20px;
    padding: 20px 40px;
+   border-radius: 2%;
 
 }.box-hub{
    width: 30%;
    background-color: white;
    float: left;
-   border: 1px dotted black;
    margin-bottom: 20px;
    margin-top: 20px;
    padding: 20px 40px;
+   border-radius: 2%;
 }
 
 .container-utility::after{
@@ -379,13 +376,21 @@ main{
    width: 70%;
    height: 100%;
    margin: auto;
-
 }
 
 .box-statistics-top{
    height: 30%;
    text-align: center;
+}
 
+.box-statistics-top h2{
+   font-size: 30px;
+   color: white;
+}
+
+.box-statistics-top p{
+   color: white;
+   margin: 20px 0;
 }
 
 .box-statistics-bottom{
@@ -396,13 +401,49 @@ table{
    table-layout: fixed;
    width: 100%;
    height: 100%;
+   margin: 50px 0 20px;
+   color: white;
 }
 
-td {
+table h2, table span{
+   color: white;
+}
+
+table h2{
+   font-size: 35px;
+   margin-top: 15px;
+}
+
+table tr:nth-child(1) td:nth-child(1) {
+   border-right: 1px solid white;
+   border-bottom: 1px solid white;
+}
+table tr:nth-child(1) td:nth-child(2) {
+   border-right: 1px solid white;
+   border-bottom: 1px solid white;
+}
+table tr:nth-child(1) td:nth-child(3) {
+   border-right: 1px solid white;
+   border-bottom: 1px solid white;
+}
+table tr:nth-child(1) td:nth-child(4) {
+   border-bottom: 1px solid white;
+}
+table tr:nth-child(2) td:nth-child(1) {
+   border-right: 1px solid white;
+}
+table tr:nth-child(2) td:nth-child(2) {
+   border-right: 1px solid white;
+}
+table tr:nth-child(2) td:nth-child(3) {
+   border-right: 1px solid white;
+}
+
+table td {
   text-align: center;
   vertical-align: middle;
+  padding: 20px 50px;
 }
-
 
 .statistics::after{
    content: '';
@@ -505,7 +546,6 @@ footer{
 
 .traffic span, .connect span, .manage span, .support span{
    color:white;
-   font-weight: bold;
 }
 
 footer a {
