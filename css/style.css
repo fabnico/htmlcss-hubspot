@@ -1,11 +1,12 @@
-body{
-   font-family: helvetica, sans-serif;
-}
 
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+}
+
+body{
+   font-family: helvetica, sans-serif;
 }
 
 a{
@@ -18,12 +19,6 @@ p,h1,h2,h3,span{
 
 header{
    background-color: rgb(244, 249, 253);
-}
-
-header::after{
-   content: '';
-   clear: both;
-   display: table;
 }
 
 .container-header{
@@ -49,14 +44,13 @@ header::after{
 }
 
 .loginbutton{
-   border-color: rgb(254, 119, 90);
+   border-color: orange;
    border-radius: 5%;
    padding: 10px;
    background-color: white;
    color: rgb(254, 119, 90);
    font-weight: bold;
    margin: 0 15px;
-
 }
 
 .getfreebutton{
@@ -86,6 +80,12 @@ header::after{
 .header-right-content{
    line-height: 100px;
    float: right;
+}
+
+.container-header::after{
+   content: '';
+   clear: both;
+   display: table;
 }
 
 .container-nav{
@@ -141,7 +141,7 @@ header::after{
   display: inline-block;
 }
 
-nav::after{
+.container-nav::after{
    content: '';
    clear: both;
    display: table;
@@ -162,7 +162,6 @@ nav::after{
 
 .box-introduction{
    width: 50%;
-   height: 100%;
 }
 
 .box-introduction h1{
@@ -185,6 +184,7 @@ nav::after{
    color: white;
    font-weight: bold;
    border-color: rgb(254, 119, 90);
+   display: inline-block;
 }
 
 .split{
@@ -255,7 +255,6 @@ main{
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%);
-
 }
 
 .logo-crm-container img{
@@ -316,9 +315,14 @@ main{
    transform: translate(0, -50%);
 }
 
+.box-crm::after{
+   content: '';
+   clear: both;
+   display: table;
+}
+
 .container-utility{
-   margin-bottom: 20px;
-   margin-top: 20px;
+   padding: 20px 0;
    text-align: center;
 }
 
@@ -350,7 +354,7 @@ main{
    margin-bottom: 20px;
 }
 
-.align-left{
+.features-align-left{
    text-align: left;
    margin: 20px 0;
 }
@@ -392,12 +396,6 @@ main{
    display: table;
 }
 
-.container-main::after{
-   content: '';
-   clear: both;
-   display: table;
-}
-
 .statistics{
    background-color: rgb(0, 171, 184);
    padding: 20px 0 40px;
@@ -428,7 +426,7 @@ main{
    height: 70%;
 }
 
-table{
+.box-statistics-bottom table{
    table-layout: fixed;
    width: 100%;
    height: 100%;
@@ -436,50 +434,31 @@ table{
    color: white;
 }
 
-table h2, table span{
+.box-statistics-bottom table h2, .box-statistics-bottom table span{
    color: white;
 }
 
-table h2{
+.box-statistics-bottom table h2{
    font-size: 35px;
    margin-top: 15px;
 }
 
-table tr:nth-child(1) td:nth-child(1) {
+.box-statistics-bottom table tr:nth-child(1) td:nth-child(1),.box-statistics-bottom table tr:nth-child(1) td:nth-child(2),.box-statistics-bottom table tr:nth-child(1) td:nth-child(3) {
    border-right: 1px solid white;
    border-bottom: 1px solid white;
 }
-table tr:nth-child(1) td:nth-child(2) {
-   border-right: 1px solid white;
+
+.box-statistics-bottom table tr:nth-child(1) td:nth-child(4) {
    border-bottom: 1px solid white;
 }
-table tr:nth-child(1) td:nth-child(3) {
-   border-right: 1px solid white;
-   border-bottom: 1px solid white;
-}
-table tr:nth-child(1) td:nth-child(4) {
-   border-bottom: 1px solid white;
-}
-table tr:nth-child(2) td:nth-child(1) {
-   border-right: 1px solid white;
-}
-table tr:nth-child(2) td:nth-child(2) {
-   border-right: 1px solid white;
-}
-table tr:nth-child(2) td:nth-child(3) {
+.box-statistics-bottom table tr:nth-child(2) td:nth-child(1),.box-statistics-bottom table tr:nth-child(2) td:nth-child(2),.box-statistics-bottom table tr:nth-child(2) td:nth-child(3) {
    border-right: 1px solid white;
 }
 
-table td {
+.box-statistics-bottom table td {
   text-align: center;
   vertical-align: middle;
   padding: 20px 50px;
-}
-
-.statistics::after{
-   content: '';
-   clear: both;
-   display: table;
 }
 
 .commercial{
@@ -510,42 +489,16 @@ table td {
 }
 
 .box-commercial-right img{
-   height:25px;
-   margin-right: 20px;
+   width: 100px;
 }
 
-/*centrare tutti questi loghi non mi è risultato semplice, credo
-per via del fatto che hanno proporzioni differenti, avevo pensato
-di inserirli in una tabella, per avere l'effetto allineatura, ma non
-sapevo se era corretto. Ho dato dei valori arbitrari almeno per uniformare
-le grandezze (ad occhio), ma ovviamente si rompe in ottica responsive */
-
-.box-commercial-right .row:nth-child(1) img:nth-child(3) {
-   height:30px;
+.box-commercial-right table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 10px;
 }
 
-.box-commercial-right .row:nth-child(1) img:nth-child(4) {
-   height:30px;
-}
-
-.box-commercial-right .row:nth-child(2) img:nth-child(1) {
-   height:40px;
-}
-
-.box-commercial-right .row:nth-child(2) img:nth-child(3) {
-   height:50px;
-}
-
-
-
-
-
-.fa-id-card-o{
-   margin-right: 15px;
-   width: 150px;
-}
-
-.commercial::after{
+.container-commercial::after{
    content: '';
    clear: both;
    display: table;
@@ -554,7 +507,8 @@ le grandezze (ad occhio), ma ovviamente si rompe in ottica responsive */
 .container-join-us{
    width: 70%;
    height: 100%;
-   margin: auto;
+   margin-left: auto;
+   margin-right: auto;
    margin-top: 50px;
 }
 
@@ -577,15 +531,11 @@ le grandezze (ad occhio), ma ovviamente si rompe in ottica responsive */
    text-align: center;
 }
 
-.donna{
-   width: 200px;
-   height: 200px;
-   background-image: url('../img/donna.jpg');
-   background-size: cover;
-   margin: auto;
+.box-join-us-right img{
+   height: 300px;
 }
 
-.join-us::after{
+.container-join-us::after{
    content: '';
    clear: both;
    display: table;
@@ -652,7 +602,7 @@ footer a {
 }
 
 .box-footer-bottom{
-   margin-bottom: 30px;
+   padding-bottom: 30px;
 }
 
 .box-footer-bottom:after{
@@ -682,11 +632,4 @@ footer a {
 .box-footer-bottom-right a {
    display: inline-block;
    margin-right:15px;
-}
-
-
-footer::after{
-   content: '';
-   clear: both;
-   display: table;
 }
