@@ -1,4 +1,6 @@
-/*Ho usato i margin dotted per rendere più chiare le sezioni */
+body{
+   font-family: helvetica, sans-serif;
+}
 
 * {
    box-sizing: border-box;
@@ -146,7 +148,10 @@ nav::after{
 }
 
 .introduction{
-   background-color: rgb(255, 244, 239);
+   background-image: url('../img/jumbotron.png');
+   background-position: right;
+   background-repeat: no-repeat;
+   background-color: #FFF5EF;
 }
 
 .container-introduction{
@@ -183,7 +188,7 @@ nav::after{
 }
 
 .split{
-   height: 100px;
+   height: 50px;
    background-color: rgb(175, 235, 228);
    border-color: rgb(51, 71, 91);
    border: 2px solid;
@@ -209,7 +214,7 @@ main{
 }
 
 .slogan-content img{
-   width: 200px;
+   width: 250px;
    height: 200px;
 }
 
@@ -270,19 +275,30 @@ main{
 }
 
 .text-crm p{
-   margin: 15px 0;
+   margin: 25px 0;
 }
 
-.texthr{
+.textp{
    color: rgb(51, 71, 91);
    font-size: 20px;
    margin-bottom: 15px;
+   float: left;
 }
 
-.hr-inline{
-   display: inline-block;
+.linep{
    width: 500px;
-   margin: 0 50px;
+   height: 2px;
+   border-bottom: 1px solid black;
+   float: left;
+   position: relative;
+   top: 10px;
+   margin-left: 20px;
+}
+
+.line-textp{
+   content: '';
+   display: table;
+   clear: both;
 }
 
 .text-crm span{
@@ -316,6 +332,11 @@ main{
    border-radius: 2%;
 }
 
+.box-marketing img{
+   width: 150px;
+   height: 100px;
+}
+
 .container-utility h3{
    margin-top: 20px;
 }
@@ -343,8 +364,14 @@ main{
    margin-top: 20px;
    padding: 20px 40px;
    border-radius: 2%;
+}
 
-}.box-hub{
+.box-sales img{
+   width: 150px;
+   height: 100px;
+}
+
+.box-hub{
    width: 30%;
    background-color: white;
    float: left;
@@ -352,6 +379,11 @@ main{
    margin-top: 20px;
    padding: 20px 40px;
    border-radius: 2%;
+}
+
+.box-hub img{
+   width: 150px;
+   height: 100px;
 }
 
 .container-utility::after{
@@ -469,12 +501,44 @@ table td {
 .big-number{
    font-size: 30px;
    color: rgb(51, 71, 91);
+   margin-bottom: 20px;
 }
 
 .box-commercial-right{
    width:60%;
    float: left;
 }
+
+.box-commercial-right img{
+   height:25px;
+   margin-right: 20px;
+}
+
+/*centrare tutti questi loghi non mi è risultato semplice, credo
+per via del fatto che hanno proporzioni differenti, avevo pensato
+di inserirli in una tabella, per avere l'effetto allineatura, ma non
+sapevo se era corretto. Ho dato dei valori arbitrari almeno per uniformare
+le grandezze (ad occhio), ma ovviamente si rompe in ottica responsive */
+
+.box-commercial-right .row:nth-child(1) img:nth-child(3) {
+   height:30px;
+}
+
+.box-commercial-right .row:nth-child(1) img:nth-child(4) {
+   height:30px;
+}
+
+.box-commercial-right .row:nth-child(2) img:nth-child(1) {
+   height:40px;
+}
+
+.box-commercial-right .row:nth-child(2) img:nth-child(3) {
+   height:50px;
+}
+
+
+
+
 
 .fa-id-card-o{
    margin-right: 15px;
