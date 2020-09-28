@@ -1,5 +1,5 @@
 
-* {
+*{
    box-sizing: border-box;
    margin: 0;
    padding: 0;
@@ -45,12 +45,14 @@ header{
 
 .loginbutton{
    border-color: orange;
+   border: 1px solid rgb(254, 119, 90);
    border-radius: 5%;
    padding: 10px;
    background-color: white;
    color: rgb(254, 119, 90);
    font-weight: bold;
    margin: 0 15px;
+   display: inline;
 }
 
 .getfreebutton{
@@ -59,7 +61,8 @@ header{
    background-color: rgb(254, 119, 90);
    color: white;
    font-weight: bold;
-   border-color: rgb(254, 119, 90);
+   border: 1px solid rgb(254, 119, 90);
+   display: inline;
 }
 
 .header-left{
@@ -174,7 +177,7 @@ header{
 }
 
 .box-introduction:last-child{
-   padding-bottom: 40px;
+   padding-bottom: 50px;
 }
 
 .getfreebutton2{
@@ -183,8 +186,9 @@ header{
    background-color: rgb(254, 119, 90);
    color: white;
    font-weight: bold;
-   border-color: rgb(254, 119, 90);
+   border: 1px solid rgb(254, 119, 90);
    display: inline-block;
+   margin: 30px 0;
 }
 
 .split{
@@ -247,7 +251,8 @@ main{
    background-color: rgb(254, 119, 90);
    color: white;
    font-weight: bold;
-   border-color: rgb(254, 119, 90);
+   border: 1px solid rgb(254, 119, 90);
+   display: inline-block;
 }
 
 .logo-crm-container{
@@ -572,6 +577,8 @@ footer{
    background-color: rgb(218, 222, 224);
    color: rgb(50, 73, 91);
    font-weight: bold;
+   border: 1px solid rgb(218, 222, 224);
+   display: inline;
 }
 
 .box.support .fa{
